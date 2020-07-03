@@ -20,6 +20,7 @@ npm install
 ```
 
 ## Usage
+First stop your server and copy the `cmi.sqlite.db` to your computer.\
 Place the `cmi.sqlite.db` database file inside the root folder and edit the coordinates for the new location inside `index.js`.
 ```js
 // The position to change every user location to
@@ -30,7 +31,8 @@ Run the script using
 ```bash
 npm run start
 ```
+After it's done, you can close the script, upload the database file to your server and start it.\
 
-After it's done, you can close the script and upload the database file to your server.
+*If another plugin is in charge of player locations on server join, the change of LogoutLocation might not do anything.*
 ## Contributing
 Pull requests are welcome but please open an issue first to discuss what you would like to change.
