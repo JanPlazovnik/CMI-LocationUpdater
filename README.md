@@ -1,8 +1,11 @@
 # CMI-LocationUpdater
-Replaces any nether location to a predefined value and removes nether homes to prepare for 1.16 update on servers using CMI.
+Replaces any Nether location to a predefined value and removes Nether homes to prepare for 1.16 update on servers using CMI.
 
 **Be sure to backup your database file before you run this.** The script should work without a problem but it has not been extensively tested.
 
+
+## Requirements
+You need to have a recent version of Node.js installed to run this.
 
 ## Installation
 
@@ -17,6 +20,7 @@ npm install
 ```
 
 ## Usage
+First stop your server and copy the `cmi.sqlite.db` to your computer.\
 Place the `cmi.sqlite.db` database file inside the root folder and edit the coordinates for the new location inside `index.js`.
 ```js
 // The position to change every user location to
@@ -27,6 +31,8 @@ Run the script using
 ```bash
 npm run start
 ```
-After it's done, you can close the script and upload the database file to your server.
+After it's done, you can close the script, upload the database file to your server and start it.\
+
+*If another plugin is in charge of player locations on server join, the change of LogoutLocation might not do anything.*
 ## Contributing
 Pull requests are welcome but please open an issue first to discuss what you would like to change.
