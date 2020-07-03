@@ -21,11 +21,14 @@ npm install
 
 ## Usage
 First stop your server and copy the `cmi.sqlite.db` to your computer.\
-Place the `cmi.sqlite.db` database file inside the root folder and edit the coordinates for the new location inside `index.js`.
+Place the `cmi.sqlite.db` database file inside the root folder and edit the coordinates and the world for the new location inside `index.js`.
 ```js
 // The position to change every user location to
 // <world_name>:<x>:<y>:<z>:<pitch>:<yaw>
 const spawnPos = 'world:275:202:242:69:-278';
+
+// The world to look for • Change this to the world you need to remove homes and locations from
+const world = 'world_nether';
 ```  
 Run the script using
 ```bash
