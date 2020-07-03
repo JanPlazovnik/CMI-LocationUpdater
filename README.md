@@ -1,5 +1,5 @@
 # CMI-LocationUpdater
-Replaces any nether location to a predefined value and removes nether homes to prepare for 1.16 update on servers using CMI.
+Replaces any Nether location to a predefined value and removes Nether homes to prepare for 1.16 update on servers using CMI.
 
 **Be sure to backup your database file before you run this.** The script should work without a problem but it has not been extensively tested.
 
